@@ -2,6 +2,7 @@ autocmd FileType lisp,ruby,yaml,javascript,haml,scss IndentationLocal 2
 autocmd FileType markdown,man,git,gitcommit,diff,mail,objdasm,pdf,help,vimshell,rfc setlocal nolist nonu
 autocmd FileType haml,scss setlocal noexpandtab
 autocmd FileType haskell,lisp,markdown setlocal expandtab
+autocmd FileType git,gitcommit,gitrebase setlocal expandtab
 autocmd FileType int-ghci setlocal syntax=haskell
 autocmd FileType int-ripl,int-irb,int-rbx setlocal syntax=ruby
 autocmd FileType int-python setlocal syntax=python
