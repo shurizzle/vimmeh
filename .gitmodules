@@ -94,3 +94,6 @@
 [submodule "plugins/tagbar"]
 	path = plugins/tagbar
 	url = git://github.com/majutsushi/tagbar
+[submodule "plugins/syntastic"]
+	path = plugins/syntastic
+	url = git://github.com/scrooloose/syntastic.git
