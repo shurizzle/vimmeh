@@ -97,3 +97,6 @@
 [submodule "plugins/syntastic"]
 	path = plugins/syntastic
 	url = git://github.com/scrooloose/syntastic.git
+[submodule "plugins/rename/plugin"]
+	path = plugins/rename/plugin
+	url = git://github.com/ReekenX/vim-rename2.git
