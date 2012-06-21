@@ -167,12 +167,8 @@ let g:CommandTNeverShowDotFiles = 1
 let g:CCTreeUsePerl        = 1
 let g:CCTreeUseUTF8Symbols = 1
 
-" ctrlp
-let g:ctrlp_extensions = ['tag', 'buffertag', 'quickfix', 'dir', 'rtscript',
-                        \ 'undo', 'line', 'changes', 'mixed', 'bookmarkdir']
-
-" powershell
-let g:Powerline_symbols = 'compatible'
+" Powerline
+let g:Powerline_symbols = 'fancy'
 let g:Powerline_colorscheme = 'darkblood'
 
 " vimshell
