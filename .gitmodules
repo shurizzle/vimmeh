@@ -100,3 +100,6 @@
 [submodule "plugins/rename/plugin"]
 	path = plugins/rename/plugin
 	url = git://github.com/ReekenX/vim-rename2.git
+[submodule "plugins/nerdcommenter"]
+	path = plugins/nerdcommenter
+	url = git://github.com/scrooloose/nerdcommenter.git
