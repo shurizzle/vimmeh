@@ -96,6 +96,12 @@ let g:Powerline#Colorschemes#darkblood#colorscheme = Pl#Colorscheme#Init([
 		\ 'r': ['white', 'darkred'],
 		\ }),
 	\
+	\ Pl#Hi#Segments(['currenttag'], {
+		\ 'n': ['gray8', 'gray2'],
+		\ 'i': ['white', 'darkestred'],
+		\ 'r': ['white', 'darkestred'],
+		\ }),
+	\
 	\ Pl#Hi#Segments(['lineinfo'], {
 		\ 'n': ['gray2', 'gray10', ['bold']],
 		\ 'N': ['gray7', 'gray1', ['bold']],
