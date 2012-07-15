@@ -49,6 +49,7 @@ set magic
 set hidden
 set shortmess=atI
 set wildignore+=*.o,*.obj,.git,*.a,*.so,*.lo
+set foldmethod=marker
 let mapleader="ò"
 
 set fileencodings=utf-8,latin1
