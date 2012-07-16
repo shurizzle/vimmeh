@@ -1,5 +1,5 @@
 autocmd FileType lisp,ruby,yaml,javascript,haml,scss IndentationLocal 2
-autocmd FileType markdown,man,git,gitcommit,diff,mail,objdasm,pdf,help,vimshell,rfc setlocal nolist nonu
+autocmd FileType markdown,man,git,gitcommit,diff,mail,objdasm,pdf,help,vimshell,rfc setlocal nolist nonu expandtab
 autocmd FileType haml,scss setlocal noexpandtab
 autocmd FileType haskell,lisp,markdown setlocal expandtab
 autocmd FileType git,gitcommit,gitrebase setlocal expandtab
