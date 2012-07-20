@@ -51,8 +51,8 @@ hi SignColumn    cterm=none      ctermfg=darkred   ctermbg=none
 hi StatusLine    cterm=underline ctermfg=black     ctermbg=darkred
 hi StatusLineNC  cterm=underline ctermfg=white     ctermbg=none
 hi VertSplit     cterm=none      ctermfg=darkred   ctermbg=none
-hi CursorColumn  cterm=none      ctermfg=none      ctermbg=235
-hi CursorLine    cterm=none      ctermfg=none      ctermbg=235
+hi CursorColumn  cterm=underline ctermfg=none      ctermbg=none
+hi CursorLine    cterm=underline ctermfg=none      ctermbg=none
 hi Cursor        cterm=none      ctermfg=white     ctermbg=darkred
 hi Title         cterm=bold      ctermfg=white     ctermbg=none
 hi Pmenu         cterm=none      ctermfg=darkred   ctermbg=none
@@ -61,7 +61,7 @@ hi PmenuSbar     cterm=none      ctermfg=white     ctermbg=darkred
 hi Folded        cterm=none      ctermfg=darkred   ctermbg=none
 hi FoldColumn    cterm=none      ctermfg=darkred   ctermbg=none
 hi MatchParen    cterm=reverse   ctermfg=none      ctermbg=none
-hi ColorColumn   cterm=none      ctermfg=none      ctermbg=233
+hi ColorColumn   cterm=none      ctermfg=white     ctermbg=darkred
 
 if &term =~ "linux"
 	hi TabLine       cterm=none ctermfg=white ctermbg=none
