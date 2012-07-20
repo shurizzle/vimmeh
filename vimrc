@@ -25,19 +25,8 @@ imap <F3> <C-o>:set invcul cul?<CR>
 nnoremap <F4> :set invcursorcolumn cursorcolumn?<CR>
 imap <F4> <C-o>:set invcursorcolumn cursorcolumn?<CR>
 
-nnoremap <F5> :call ColorColumnToggle()<CR>
-imap <F5> <C-o>:call ColorColumnToggle()<CR>
-
 nnoremap <C-c> :redraw!<CR>
 imap <C-c> <C-o>:redraw!<CR>
-
-function ColorColumnToggle()
-	if &colorcolumn
-		set colorcolumn=
-	else
-		set colorcolumn=80
-	endif
-endfunction
 
 set mouse=c
 set directory=~/.tmp
@@ -64,6 +53,7 @@ set incsearch
 set sidescroll=1
 set scrolloff=3
 set nowrap
+set colorcolumn=80
 
 set autoindent
 set smartindent
