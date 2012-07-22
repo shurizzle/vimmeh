@@ -155,6 +155,7 @@ inoremap <Tab> <Esc>`^
 
 " Syntastic
 let g:syntastic_enable_signs = 1
+let g:syntastic_quiet_warnings = 1
 
 let c_no_curly_error   = 1
 let g:localrc_filename = '.lvimrc'
