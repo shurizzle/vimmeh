@@ -30,7 +30,6 @@ hi ErrorMsg      cterm=none      ctermfg=darkred   ctermbg=none
 hi NonText       cterm=bold      ctermfg=darkgray  ctermbg=none
 hi SpecialKey    cterm=none      ctermfg=darkgray  ctermbg=none
 hi LineNr        cterm=none      ctermfg=darkgrey  ctermbg=none
-hi CursorLineNr  cterm=none      ctermfg=white     ctermbg=none
 hi IncSearch     cterm=none      ctermfg=black     ctermbg=darkred
 hi Search        cterm=none      ctermfg=black     ctermbg=darkred
 hi Visual        cterm=none      ctermfg=white     ctermbg=darkred
@@ -51,8 +50,10 @@ hi SignColumn    cterm=none      ctermfg=darkred   ctermbg=none
 hi StatusLine    cterm=underline ctermfg=black     ctermbg=darkred
 hi StatusLineNC  cterm=underline ctermfg=white     ctermbg=none
 hi VertSplit     cterm=none      ctermfg=darkred   ctermbg=none
-hi CursorColumn  cterm=none      ctermfg=none      ctermbg=235
-hi CursorLine    cterm=none      ctermfg=none      ctermbg=235
+hi CursorColumn  cterm=none      ctermfg=none      ctermbg=233
+hi CursorLineNr  cterm=none      ctermfg=white     ctermbg=233
+hi CursorLine    cterm=none      ctermfg=none      ctermbg=233
+hi ColorColumn   cterm=none      ctermfg=none      ctermbg=233
 hi Cursor        cterm=none      ctermfg=white     ctermbg=darkred
 hi Title         cterm=bold      ctermfg=white     ctermbg=none
 hi Pmenu         cterm=none      ctermfg=darkred   ctermbg=none
@@ -61,7 +62,6 @@ hi PmenuSbar     cterm=none      ctermfg=white     ctermbg=darkred
 hi Folded        cterm=none      ctermfg=darkred   ctermbg=none
 hi FoldColumn    cterm=none      ctermfg=darkred   ctermbg=none
 hi MatchParen    cterm=reverse   ctermfg=none      ctermbg=none
-hi ColorColumn   cterm=none      ctermfg=none      ctermbg=233
 
 if &term =~ "linux"
 	hi TabLine       cterm=none ctermfg=white ctermbg=none
@@ -75,6 +75,9 @@ if v:version >= 700
 	au InsertEnter * hi StatusLine cterm=none ctermfg=white ctermbg=darkred
 	au InsertLeave * hi StatusLine cterm=none ctermfg=black ctermbg=darkred
 endif
+
+hi SyntasticError   cterm=none      ctermfg=white ctermbg=darkred
+hi SyntasticWarning cterm=underline ctermfg=white ctermbg=none
 
 " Taglist
 hi TagListFileName cterm=none ctermfg=darkred ctermbg=none
