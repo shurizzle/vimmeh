@@ -22,9 +22,6 @@
 [submodule "syntax/javascript"]
 	path = syntax/javascript
 	url = git://github.com/pangloss/vim-javascript.git
-[submodule "plugins/localrc"]
-	path = plugins/localrc
-	url = git://github.com/thinca/vim-localrc.git
 [submodule "syntax/markdown"]
 	path = syntax/markdown
 	url = git://github.com/tpope/vim-markdown.git
