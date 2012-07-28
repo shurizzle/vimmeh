@@ -7,6 +7,8 @@ call pathogen#infect()
 syntax on
 filetype plugin indent on
 set ofu=syntaxcomplete#Complete
+set exrc
+set secure
 
 colorscheme darkblood
 
