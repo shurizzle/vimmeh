@@ -51,7 +51,7 @@ hi StatusLine    cterm=underline ctermfg=black     ctermbg=darkred
 hi StatusLineNC  cterm=underline ctermfg=white     ctermbg=none
 hi VertSplit     cterm=none      ctermfg=darkred   ctermbg=none
 hi CursorColumn  cterm=none      ctermfg=none      ctermbg=233
-hi CursorLineNr  cterm=none      ctermfg=white     ctermbg=233
+hi CursorLineNr  cterm=none      ctermfg=none      ctermbg=233
 hi CursorLine    cterm=none      ctermfg=none      ctermbg=233
 hi ColorColumn   cterm=none      ctermfg=none      ctermbg=233
 hi Cursor        cterm=none      ctermfg=white     ctermbg=darkred

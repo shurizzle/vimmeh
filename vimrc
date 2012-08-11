@@ -110,9 +110,9 @@ command -nargs=1 IndentationLocal silent setlocal ts=<args> shiftwidth=<args>
 " Mappings
 map RE gq}
 
-map <F1> <Nop>
-imap <F1> <Nop>
-vmap <F1> <Nop>
+map <F1> :NumbersToggle<CR>
+imap <F1> :NumbersToggle<CR>
+cmap <F1> :NumbersToggle<CR>
 
 map <silent> <PageUp> 1000<C-U>
 map <silent> <PageDown> 1000<C-D>
