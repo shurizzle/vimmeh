@@ -100,3 +100,6 @@
 [submodule "plugins/nerdcommenter"]
 	path = plugins/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
+[submodule "plugins/numbers"]
+	path = plugins/numbers
+	url = git://github.com/myusuf3/numbers.vim.git
