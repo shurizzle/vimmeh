@@ -18,6 +18,9 @@ if &term =~ "rxvt"
 	exec "set <kPageDown>=\<ESC>[6^"
 endif
 
+nnoremap <F1> :call NumbersToggle()<CR>
+imap <F1> <C-o>:call NumbersToggle()<CR>
+
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 
@@ -40,6 +43,13 @@ function ColorColumnToggle()
 		set colorcolumn=80
 	endif
 endfunction
+
+augroup relnum
+	au!
+
+	au WinLeave * call SetNumbers()
+	au WinEnter * call SetRelative()
+augroup END
 
 augroup cline
 	au!
@@ -69,7 +79,6 @@ set ttimeout
 set ttimeoutlen=10
 set ttyfast
 set synmaxcol=800
-set lazyredraw
 
 set fileencodings=utf-8,latin1
 set encoding=utf-8
@@ -109,10 +118,6 @@ command -nargs=1 IndentationLocal silent setlocal ts=<args> shiftwidth=<args>
 
 " Mappings
 map RE gq}
-
-map <F1> :NumbersToggle<CR>
-imap <F1> :NumbersToggle<CR>
-cmap <F1> :NumbersToggle<CR>
 
 map <silent> <PageUp> 1000<C-U>
 map <silent> <PageDown> 1000<C-D>
