@@ -41,6 +41,17 @@ function ColorColumnToggle()
 	endif
 endfunction
 
+augroup cline
+	au!
+	au WinLeave * set nocursorline
+	au WinEnter * set cursorline
+
+	au InsertEnter * set nocursorline
+	au InsertLeave * set cursorline
+augroup END
+
+au VimResized * :wincmd =
+
 set mouse=c
 set directory=~/.tmp
 set backupdir=~/.tmp
@@ -53,6 +64,12 @@ set shortmess=atI
 set wildignore+=*.o,*.obj,.git,*.a,*.so,*.lo
 set foldmethod=marker
 let mapleader="ò"
+set notimeout
+set ttimeout
+set ttimeoutlen=10
+set ttyfast
+set synmaxcol=800
+set lazyredraw
 
 set fileencodings=utf-8,latin1
 set encoding=utf-8
@@ -77,8 +94,6 @@ set noexpandtab
 set modeline
 set tildeop
 set cpoptions+=$
-
-set statusline=%F%m%r%h%w\ [Type:\ %Y]\ [Lines:\ %L\ @\ %p%%\ {%l;%v}]\ %{fugitive#statusline()}
 set laststatus=2
 
 set number
