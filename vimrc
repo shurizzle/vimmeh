@@ -49,6 +49,8 @@ augroup relnum
 
 	au WinLeave * call SetNumbers()
 	au WinEnter * call SetRelative()
+
+	au VimEnter * call SetRelative()
 augroup END
 
 augroup cline
@@ -58,6 +60,8 @@ augroup cline
 
 	au InsertEnter * set nocursorline
 	au InsertLeave * set cursorline
+
+	au VimEnter * set cursorline
 augroup END
 
 au VimResized * :wincmd =
