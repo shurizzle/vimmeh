@@ -255,21 +255,14 @@ function! DoArpeggios()
 endfunction
 
 " utilities
-map <Leader>p :call MarkdownPreview()<CR>
-function! MarkdownPreview()
-	silent update
-	let output_name = tempname() . '.html'
 
-	let file_header = ['<html>', '<head>',
-		\ '<meta http-equiv="Content-Type" content="text/html; charset=utf-8">',
-		\ '<title>'.expand('%:p').'</title>',
-		\ '</head>', '<body>']
+function! MarkupPreview()
+  silent update
+  let output_name = tempname() . '.html'
 
-	call writefile(file_header, output_name)
+  silent exec '!~/.vim/bin/github-flavored-markup.rb "'.expand('%:p').'" > "'.output_name.'"'
+  silent exec '!xdg-open "'.output_name.'" &>/dev/null &'
 
-	silent exec '!~/.vim/bin/github-flavored-markdown.rb "' . expand('%:p') . '" >> "' . output_name . '"'
-	silent exec '!echo "</body></html>" >> "' . output_name . '"'
-	silent exec '!xdg-open "' . output_name . '" &'
-
-	redraw!
+  redraw!
 endfunction
+map <Leader>p :call MarkupPreview()<CR>
