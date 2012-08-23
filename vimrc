@@ -260,9 +260,16 @@ function! MarkupPreview()
   silent update
   let output_name = tempname() . '.html'
 
-  silent exec '!~/.vim/bin/github-flavored-markup.rb "'.expand('%:p').'" > "'.output_name.'"'
-  silent exec '!xdg-open "'.output_name.'" &>/dev/null &'
-
-  redraw!
+  let output = system('~/.vim/bin/github-flavored-markup.rb "'.expand('%:p').'" > "'.output_name.'"')
+  if v:shell_error
+    call delete(output_name)
+    let output = split(output, '\n')[0]
+    echohl ErrorMsg
+    echomsg output
+    echohl NONE
+  else
+    exec 'silent !(xdg-open "'.output_name.'"; rm "'.output_name.'") &>/dev/null &'
+    redraw!
+  endif
 endfunction
 map <Leader>p :call MarkupPreview()<CR>
